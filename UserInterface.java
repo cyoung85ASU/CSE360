@@ -18,7 +18,7 @@ public class UserInterface {
     private Button addQuestionButton = new Button("Submit Question");
 
     private VBox mainLayout = new VBox(15);
-    private Map<String, VBox> questionSections = new HashMap<>(); // ✅ Stores UI for each question
+    private Map<String, VBox> questionSections = new HashMap<>(); // Stores UI for each question
 
     public UserInterface(Pane root) {
         this.questionService = new Questions();
@@ -26,7 +26,7 @@ public class UserInterface {
 
         applicationTitle.setFont(new Font(20));
 
-        // ✅ Layout for entering a question
+        // Layout for entering a question
         HBox questionInputLayout = new HBox(10, userQuestionField, addQuestionButton);
         VBox questionArea = new VBox(20, applicationTitle, questionInputLayout, mainLayout);
         questionArea.setPadding(new Insets(20));
@@ -43,13 +43,13 @@ public class UserInterface {
             return;
         }
 
-        // ✅ Add question to the service
+        // Add question to the service
         String questionId = questionService.addQuestion(questionText, "User");
 
-        // ✅ Create UI for this question
+        //  Create UI for this question
         VBox questionBox = createQuestionSection(questionId, questionText);
-        questionSections.put(questionId, questionBox); // ✅ Store the section in the map
-        mainLayout.getChildren().add(questionBox); // ✅ Add to the main UI
+        questionSections.put(questionId, questionBox); //  Store the section in the map
+        mainLayout.getChildren().add(questionBox); //  Add to the main UI
 
         userQuestionField.clear();
     }
@@ -62,7 +62,7 @@ public class UserInterface {
         Button submitAnswerButton = new Button("Submit Answer");
         ListView<String> answerListView = new ListView<>();
 
-        // ✅ Submit answer action
+        // Submit answer action
         submitAnswerButton.setOnAction(e -> {
             String answerText = answerField.getText().trim();
             if (!answerText.isEmpty()) {
