@@ -5,6 +5,18 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+/*******
+ * <p> Title: ApplicationGUI Class. </p>
+ * 
+ * <p> Description: Handles the JavaFX-based graphical user interface. </p>
+ * 
+ * <p> Copyright: Lynn Robert Carter © 2024 </p>
+ * 
+ * @author Lynn Robert Carter
+ * 
+ * @version 1.00    2024-02-14 Initial version
+ * 
+ */
 public class ApplicationGUI extends Application {
     public final static double WINDOW_WIDTH = 800;
     public final static double WINDOW_HEIGHT = 600;

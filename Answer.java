@@ -16,6 +16,18 @@ import java.util.UUID;
  */
 
 // Question Class
+/*******
+ * <p> Title: Answer Class. </p>
+ * 
+ * <p> Description: Represents an individual answer in the Q&A system. </p>
+ * 
+ * <p> Copyright: Lynn Robert Carter © 2024 </p>
+ * 
+ * @author Lynn Robert Carter
+ * 
+ * @version 1.00    2024-02-14 Initial version
+ * 
+ */
 public class Answer {
 	private final String id; // Unique identifier for the Answer
 	private String text; // Actual question text

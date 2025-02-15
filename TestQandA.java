@@ -2,6 +2,18 @@ package questionAndAnswerApplication;
 
 import java.util.List;
 
+/*******
+ * <p> Title: TestQandA Class. </p>
+ * 
+ * <p> Description: Executes automated and manual tests for the Q&A application. </p>
+ * 
+ * <p> Copyright: Lynn Robert Carter © 2024 </p>
+ * 
+ * @author Lynn Robert Carter
+ * 
+ * @version 1.00    2024-02-14 Initial version
+ * 
+ */
 public class TestQandA {
     public static void main(String[] args) {
         Questions questions = new Questions();

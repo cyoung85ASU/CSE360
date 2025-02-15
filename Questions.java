@@ -2,6 +2,18 @@ package questionAndAnswerApplication;
 
 import java.util.*;
 
+/*******
+ * <p> Title: Questions Class. </p>
+ * 
+ * <p> Description: Manages a collection of stored questions. </p>
+ * 
+ * <p> Copyright: Lynn Robert Carter © 2024 </p>
+ * 
+ * @author Lynn Robert Carter
+ * 
+ * @version 1.00    2024-02-14 Initial version
+ * 
+ */
 public class Questions {
     private final Map<String, Question> questionMap = new HashMap<>();
 
